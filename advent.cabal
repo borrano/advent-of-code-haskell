@@ -1,0 +1,222 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           advent
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/advent#readme>
+homepage:       https://github.com/githubuser/advent#readme
+bug-reports:    https://github.com/githubuser/advent/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2022 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/advent
+
+library
+  exposed-modules:
+      Lib
+      Util
+      Y20.Day1
+      Y20.Day10
+      Y20.Day11
+      Y20.Day12
+      Y20.Day13
+      Y20.Day14
+      Y20.Day15
+      Y20.Day16
+      Y20.Day17
+      Y20.Day18
+      Y20.Day19
+      Y20.Day2
+      Y20.Day20
+      Y20.Day21
+      Y20.Day22
+      Y20.Day23
+      Y20.Day24
+      Y20.Day25
+      Y20.Day3
+      Y20.Day4
+      Y20.Day5
+      Y20.Day6
+      Y20.Day7
+      Y20.Day8
+      Y20.Day9
+      Y21.Day1
+      Y21.Day10
+      Y21.Day11
+      Y21.Day12
+      Y21.Day13
+      Y21.Day14
+      Y21.Day15
+      Y21.Day16
+      Y21.Day17
+      Y21.Day18
+      Y21.Day19
+      Y21.Day2
+      Y21.Day20
+      Y21.Day21
+      Y21.Day22
+      Y21.Day23
+      Y21.Day24
+      Y21.Day25
+      Y21.Day3
+      Y21.Day4
+      Y21.Day5
+      Y21.Day6
+      Y21.Day7
+      Y21.Day8
+      Y21.Day9
+  other-modules:
+      Paths_advent
+  hs-source-dirs:
+      src
+  default-extensions:
+      ViewPatterns
+      MultiParamTypeClasses
+      OverloadedStrings
+      RecordWildCards
+      TupleSections
+      MultiParamTypeClasses
+      NoMonomorphismRestriction
+      FlexibleInstances
+      TypeSynonymInstances
+      NoMonomorphismRestriction
+      FlexibleContexts
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      DeriveAnyClass
+      TemplateHaskell
+      StandaloneDeriving
+      ScopedTypeVariables
+      GHC2021
+  build-depends:
+      HUnit
+    , array
+    , async
+    , attoparsec
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , extra
+    , list-transformer
+    , monad-loops
+    , monad-par
+    , mtl
+    , pqueue
+    , repa
+    , text
+    , transformers
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable advent-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_advent
+  hs-source-dirs:
+      app
+  default-extensions:
+      ViewPatterns
+      MultiParamTypeClasses
+      OverloadedStrings
+      RecordWildCards
+      TupleSections
+      MultiParamTypeClasses
+      NoMonomorphismRestriction
+      FlexibleInstances
+      TypeSynonymInstances
+      NoMonomorphismRestriction
+      FlexibleContexts
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      DeriveAnyClass
+      TemplateHaskell
+      StandaloneDeriving
+      ScopedTypeVariables
+      GHC2021
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HUnit
+    , advent
+    , array
+    , async
+    , attoparsec
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , extra
+    , list-transformer
+    , monad-loops
+    , monad-par
+    , mtl
+    , pqueue
+    , repa
+    , text
+    , transformers
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+test-suite advent-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_advent
+  hs-source-dirs:
+      test
+  default-extensions:
+      ViewPatterns
+      MultiParamTypeClasses
+      OverloadedStrings
+      RecordWildCards
+      TupleSections
+      MultiParamTypeClasses
+      NoMonomorphismRestriction
+      FlexibleInstances
+      TypeSynonymInstances
+      NoMonomorphismRestriction
+      FlexibleContexts
+      DeriveFunctor
+      DeriveFoldable
+      DeriveTraversable
+      DeriveAnyClass
+      TemplateHaskell
+      StandaloneDeriving
+      ScopedTypeVariables
+      GHC2021
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HUnit
+    , advent
+    , array
+    , async
+    , attoparsec
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , extra
+    , list-transformer
+    , monad-loops
+    , monad-par
+    , mtl
+    , pqueue
+    , repa
+    , text
+    , transformers
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
